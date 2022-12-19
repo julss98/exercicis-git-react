@@ -1,15 +1,31 @@
 import { useState } from "react";
 
-function Estructura () {
-    const [acordio, setAcordio] = useState(false) 
+function Estructura (title, content) {
+    const [acordio, setAcordio] = useState (false);
+
     return(
-    <div>
+        <>
             <div className="acordio">
-                <button onClick={() => setAcordio((valorActual) => !valorActual)}>{Title}</button>
-                <p>{acordio ? "Contingut A" : ""}</p>  
+              
+                <button onClick={() => setAcordio((valorActual) => !valorActual)}>{title}</button>
+                <p>{acordio ? {content} : ""}</p> 
             </div>  
-    </div>
-    )
+        </>
+        ) 
 }
 
 export default Estructura;
+
+/*
+const [acordio, setAcordio] = useState (false);
+
+    return(
+        <>
+            <div className="acordio">
+              
+                <button onClick={() => setAcordio((valorActual) => !valorActual)}>{title}</button>
+                <p>{acordio ? {content} : ""}</p> 
+            </div>  
+        </>
+        )
+*/
