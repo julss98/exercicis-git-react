@@ -1,0 +1,17 @@
+.greenButton{
+    background-color: green;
+    height: 50px;
+}
+.blueButton{
+    background-color: blue;
+    height: 50px;
+}
+.uncoloredButton{
+    background-color: null;
+    height: 50px;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
