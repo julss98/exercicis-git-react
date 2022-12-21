@@ -35,12 +35,12 @@ function Acordio (){
     return (
         <>
             <h1>Título de los títulos</h1>
-            {informacio.map((apartat, index) => {
+            {informacio.map((apartat) => {
                 return (
                     <Estructura
                         title = {apartat.title}
                         content = {apartat.content}
-                        key = {index}
+                        key = {apartat.id}
                     />
                 );
             })}

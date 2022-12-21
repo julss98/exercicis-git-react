@@ -1,14 +1,14 @@
 import { useState } from "react";
 
-function Estructura (title, content) {
+function Estructura ({title, content}) {
     const [acordio, setAcordio] = useState (false);
-
+    console.log (content)
     return(
         <>
             <div className="acordio">
               
                 <button onClick={() => setAcordio((valorActual) => !valorActual)}>{title}</button>
-                <p>{acordio ? {content} : ""}</p> 
+                {acordio ? <p>{content}</p> : null}
             </div>  
         </>
         ) 
