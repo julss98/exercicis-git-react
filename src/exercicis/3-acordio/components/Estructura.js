@@ -2,7 +2,6 @@ import { useState } from "react";
 
 function Estructura ({title, content}) {
     const [acordio, setAcordio] = useState (false);
-    console.log (content)
     return(
         <>
             <div className="acordio">
