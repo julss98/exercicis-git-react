@@ -1,0 +1,11 @@
+.carrusel{
+    display: flex;
+    align-items: baseline;
+}
+
+.button{
+    height: 50px;
+    background-color: aqua;
+    margin: auto 10px;
+
+}
