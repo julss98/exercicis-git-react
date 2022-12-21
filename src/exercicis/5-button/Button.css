@@ -13,5 +13,11 @@
 
 .buttonContainer{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.premutText{
+    display: flex;
     justify-content: center;
 }
